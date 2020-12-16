@@ -12,6 +12,7 @@ public class Quiz {
         int song3;
         int song4;
         int song5;
+        int score;
 
         //scanner for input options
         Scanner scan = new Scanner(System.in);
@@ -31,7 +32,7 @@ public class Quiz {
             while (song == 1) {
                 //selected right option
                 System.out.println("Congrate you answer is correct");
-
+                score++;
                 song++;
             }
             System.out.println();
@@ -52,6 +53,7 @@ public class Quiz {
         {
             while (song2 == 2) {
                 System.out.println("Congrate you answer is correct ");
+                score++;
                 song2++;
             }
             System.out.println();
@@ -72,6 +74,7 @@ public class Quiz {
             while (song4 == 2) {
                 //display congrate message for right answer
                 System.out.println("Congrate you answer is correct");
+                score++;
                 song4++;
             }
             System.out.println();
@@ -94,6 +97,7 @@ public class Quiz {
             while (song3 == 4) {
                 //display congrate message for right answer
                 System.out.println("Congrate you answer is correct");
+                score++;
                 song3++;
             }
             System.out.println();
@@ -112,10 +116,11 @@ public class Quiz {
             while (song5 == 3) {
                 //display congrats message for right answer
                 System.out.println("Congrats you answer is correct");
-                //stop repeating
+                score++;
                 song5++;
             }  //stop repeating
             System.out.println();
         }
+        System.out.println("Your final score = " + score + "/5");
     }
 }
